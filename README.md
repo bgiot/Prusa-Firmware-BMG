@@ -20,3 +20,8 @@ Also, for the 1/16 (0.9° stepper), there is an extra change:
 ``` C
 #define TMC2130_USTEPS_E    16
 ```
+
+
+## Information about the MK3S custom firmwares
+
+As there is an issue with the stock MK3S firmware because of height of the X carriage, the XYZ calibration cannot succeed.   These BMG MK3S custom firmwares implement a workaround : based on MK3 height configuration with just the sensor type changed.
