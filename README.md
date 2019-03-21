@@ -2,7 +2,11 @@
 
 This repository contains my personal build of the Prusa MK3 printer firmware with specific settings for Bondtech Extruder
 
-__Thanks to Chris Warkocki for his work on this settings!__
+**Thanks to Chris Warkocki for his work on this settings!**
+
+
+> **_You don't have to run any Bondtech estep.gcode as this firmware already contains the e-step change._**
+
 
 The changes are:
 
@@ -13,7 +17,6 @@ The changes are:
 #define UNLOAD_FILAMENT_1 "G1 E-100 F7000"
 #define FILAMENTCHANGE_FINALFEED 35
 ```
-
 
 Also, for the 1/16 (0.9° stepper), there is an extra change:
 
