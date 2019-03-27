@@ -5,7 +5,11 @@ This repository contains my personal build of the Prusa MK3 printer firmware wit
 **Thanks to Chris Warkocki for his work on this settings!**
 
 
-> **_You don't have to run any Bondtech estep.gcode as this firmware already contains the e-step change._**
+> **_As flashing the firmware doesn't update eeprom settings, you still need to apply e-step change command!_**
+```
+M92 E830
+M500
+```
 
 
 The changes are:
