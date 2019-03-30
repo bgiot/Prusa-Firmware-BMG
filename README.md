@@ -6,13 +6,18 @@ This repository contains my personal build of the Prusa MK3 printer firmware wit
 
 
 > **_As flashing the firmware doesn't update eeprom settings, you still need to apply e-step change command!_**
+
+## MK3/MK3S
+
+### The commands to update the eeprom are:
+
 ```
 M92 E830
 M500
 ```
 
 
-The changes are:
+### The changes in the firmware are:
 
 ``` C
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {100,100,3200/8,830}
@@ -29,6 +34,27 @@ Also, for the 1/16 (0.9° stepper), there is an extra change:
 ```
 
 
-## Information about the MK3S custom firmwares
+## MK2.5 (RAMBo1.3)
 
-As there is an issue with the stock MK3S firmware because of height of the X carriage, the XYZ calibration cannot succeed.   These BMG MK3S custom firmwares implement a workaround : based on MK3 height configuration with just the sensor type changed.
+For 1.8° motor:
+
+```
+M92 E415
+M500
+```
+
+For 0.9° motor:
+
+```
+M92 E830
+M500
+```
+
+### The changes in the firmware are:
+
+``` C
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {100,100,3200/8,415}  // 830 for the BMG-16
+#define LOAD_FILAMENT_2 "G1 E50 F100"
+#define UNLOAD_FILAMENT_1 "G1 E-100 F7000"
+#define FILAMENTCHANGE_FINALFEED 35
+```
