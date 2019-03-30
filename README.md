@@ -2,7 +2,7 @@
 
 This repository contains my personal build of the Prusa MK3 printer firmware with specific settings for Bondtech Extruder
 
-**Thanks to Chris Warkocki for his work on this settings!**
+**Thanks to Chris Warkocki for his work on these settings!**
 
 
 > **_As flashing the firmware doesn't update eeprom settings, you still need to apply e-step change command!_**
