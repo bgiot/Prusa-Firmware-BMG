@@ -58,3 +58,15 @@ M500
 #define UNLOAD_FILAMENT_1 "G1 E-100 F4800" // F2400 for the BMG-16
 #define FILAMENTCHANGE_FINALFEED 35
 ```
+
+## You want to compile yourself ?
+
+I forked the official Prusa repository and use a specific branch with all my custom changes.  
+You can have a look at my changes at: https://github.com/bgiot/Prusa-Firmware/tree/BMGCustom  
+
+Each time a new version is released in the official repository, I'll merge it in my custom branch.
+
+You can easily compile from my custom branch.   
+You just need Microsoft __Visual Studio Code__ and the extension __PlatformIO IDE 1.6.0__.
+
+
