@@ -4,6 +4,7 @@ This repository contains my personal build of the Prusa MK3 printer firmware wit
 
 **Thanks to Chris Warkocki for his work on these settings!**
 
+__Use those custom firmwares at your own risk.__
 
 > **_As flashing the firmware doesn't update eeprom settings, you still need to apply e-step change command!_**
 
@@ -58,6 +59,10 @@ M500
 #define UNLOAD_FILAMENT_1 "G1 E-100 F4800" // F2400 for the BMG-16
 #define FILAMENTCHANGE_FINALFEED 35
 ```
+
+## S specific versions
+
+Z_MAX_POS has been changed for MK25S (205) and MK3S (204) to fix calibration issue. 
 
 ## You want to compile yourself ?
 
