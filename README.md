@@ -13,9 +13,9 @@ __Use those custom firmwares at your own risk.__
 ### The commands to update the eeprom are:
 
 ```
-M350 E16 ;16 for 1.8°, 8 for 0.9°
-M91 E415 ; Make sure to run this command after the other one!
-M500
+M350 E16 ; 16 for 1.8°, 8 for 0.9°
+M92 E415 ; Make sure to run this command after the previous one!
+M500 ; save settings
 ```
 
 
