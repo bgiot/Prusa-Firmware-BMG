@@ -14,6 +14,7 @@ __Use those custom firmwares at your own risk.__
 
 ```
 M92 E415
+M350 E16 ;16 for 1.8°, 8 for 0.9°
 M500
 ```
 
