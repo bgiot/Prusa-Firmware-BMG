@@ -13,7 +13,7 @@ __Use those custom firmwares at your own risk.__
 ### The commands to update the eeprom are:
 
 ```
-M92 E830
+M92 E415
 M500
 ```
 
@@ -21,17 +21,12 @@ M500
 ### The changes in the firmware are:
 
 ``` C
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {100,100,3200/8,830}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {100,100,3200/8,415}
 #define TMC2130_UNLOAD_CURRENT_R 20
 #define LOAD_FILAMENT_2 "G1 E50 F100"
 #define UNLOAD_FILAMENT_1 "G1 E-100 F7000"
 #define FILAMENTCHANGE_FINALFEED 35
-```
-
-Also, for the 1/16 (0.9° stepper), there is an extra change:
-
-``` C
-#define TMC2130_USTEPS_E    16
+#define TMC2130_USTEPS_E    16 // 8 for 0.9° stepper
 ```
 
 
@@ -60,9 +55,6 @@ M500
 #define FILAMENTCHANGE_FINALFEED 35
 ```
 
-## S specific versions
-
-Z_MAX_POS has been changed for MK25S (205) and MK3S (204) to fix calibration issue. 
 
 ## You want to compile yourself ?
 
