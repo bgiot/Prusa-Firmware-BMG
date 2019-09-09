@@ -67,6 +67,3 @@ Each time a new version is released in the official repository, I'll merge it in
 You can easily compile from my custom branch.   
 You just need Microsoft __Visual Studio Code__ and the extension __PlatformIO IDE__.
 
-~~**_Note: Building 3.8.0 with platform.io gives issues.  Use Arduino IDE for the moment.  I'm working on a fix._**
-~~
-
